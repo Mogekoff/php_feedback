@@ -41,8 +41,6 @@
 		$status_code = 500;
 		$status_text = 'Внутренняя ошибка сервера.';
 		http_response_code(500);
-	} else {
-		http_response_code(200);
 	}
 
 	$json_response = json_encode(array(
