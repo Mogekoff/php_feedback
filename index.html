@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Обратная связь</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+<form action="message.php" method="post">
+    <label for="email">E-mail<span class="required">*</span>:</label>
+    <input type="email" id="email" name="email">
+    <label for="phone">Номер телефона<span class="required">*</span>:</label>
+    <input type="tel" id="phone" name="phone">
+    <label for="message">Сообщение (не более 1000 символов):</label>
+    <textarea id="message" name="message"></textarea>
+    <input type="submit">
+</form>
+
+</body>
+</html>

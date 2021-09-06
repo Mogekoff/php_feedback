@@ -1,0 +1,18 @@
+* {
+    margin: unset;
+    padding: unset;
+}
+form * {
+    display: block;
+}
+form {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+input {
+    margin: 5px 5px 5px 0;
+}
+.required {
+    color:red;
+    display: inline;
+}
