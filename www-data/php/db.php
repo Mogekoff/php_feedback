@@ -1,5 +1,5 @@
 <?php
-	ini_set('display_errors', 1);   //вывод ошибок выключен
+	ini_set('display_errors', 0);   //вывод ошибок выключен
 
 	$creds_json = file_get_contents("credential.json");
 	$creds = json_decode($creds_json, true);
