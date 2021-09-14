@@ -12,7 +12,7 @@
 	$message = pg_escape_string(htmlspecialchars(stripslashes(trim($_POST['message']))));
 
 	$status = 'OK';
-	$status_code = 200;
+	$status_code = 201;
 	$status_text = 'Запрос получен и сохранен.';
 
 	$phone_regex = "/^\+7\d{10}$|^[7-8]\d{10}$/";
@@ -42,6 +42,7 @@
 		$status_text = 'Внутренняя ошибка сервера.';
 		http_response_code(500);
 	}
+	else http_response_code(201);
 
 	$json_response = json_encode(array(
 		"status" => $status,
